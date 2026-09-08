@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arun Gyawali — software engineer building reliable banking systems, data products, and applied machine-learning projects.">
+  <meta name="theme-color" content="#090b19">
+  <title>Arun Gyawali | Player One</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to start"><span class="brand-mark">AG</span><span>ARUN.EXE</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#quests">QUESTS</a><a href="#inventory">SKILLS</a><a href="#journey">LOG</a><a href="#contact">CONNECT</a>
+    </nav>
+    <div class="score">SCORE <span id="score">000450</span></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR THE NEXT QUEST</p>
+        <h1><span>PLAYER ONE</span>ARUN<br>GYAWALI</h1>
+        <p class="role" id="type-role">JAVA + PYTHON ENGINEER // DATA // ML & AI</p>
+        <p class="intro">I build dependable software with Java and Python—from secure banking workflows and REST APIs to data pipelines and machine-learning systems that turn messy data into useful decisions.</p>
+        <div class="hero-actions">
+          <a class="pixel-btn primary" href="#quests">▶ START QUEST</a>
+          <a class="pixel-btn" href="https://github.com/arungyaw" target="_blank" rel="noreferrer">VIEW GITHUB ↗</a>
+        </div>
+        <p class="control-hint"><kbd>↑</kbd><kbd>↓</kbd> EXPLORE &nbsp; <kbd>ENTER</kbd> OPEN</p>
+      </div>
+
+      <aside class="player-card" aria-label="Profile photo placeholder">
+        <div class="card-top"><span>PLAYER CARD</span><span>LV. 02</span></div>
+        <div class="photo-slot">
+          <img src="photo.jpg" alt="Portrait of Arun Gyawali" onerror="this.hidden=true">
+          <div class="photo-fallback"><div class="avatar-placeholder" aria-hidden="true"><span class="avatar-head"></span><span class="avatar-body"></span></div><p>YOUR PHOTO</p><small>Add photo.jpg</small></div>
+        </div>
+        <dl>
+          <div><dt>CLASS</dt><dd>JAVA + PYTHON ENGINEER</dd></div>
+          <div><dt>BASE</dt><dd>VIRGINIA, USA</dd></div>
+          <div><dt>FOCUS</dt><dd>BACKEND + DATA + AI</dd></div>
+        </dl>
+        <div class="xp"><span>XP</span><div><i></i></div><b>78%</b></div>
+      </aside>
+    </section>
+
+    <section class="section quests" id="quests">
+      <div class="section-heading"><p>WORLD 01</p><h2>SELECT A QUEST</h2><span>Projects built to solve real problems.</span></div>
+      <div class="project-grid">
+        <article class="project-card featured" tabindex="0">
+          <div class="project-top"><span class="project-number">01</span><span class="badge">BOSS LEVEL</span></div>
+          <div class="project-icon">₣</div>
+          <p class="project-type">FULL-STACK • FINTECH</p>
+          <h3>FINFLOW AI</h3>
+          <p>A secure personal-finance platform for accounts, transfers, beneficiaries, categorization, and cash-flow insights—built from the banking domain outward.</p>
+          <ul class="stack"><li>JAVA 21</li><li>SPRING BOOT</li><li>REACT</li><li>POSTGRESQL</li><li>JWT</li></ul>
+          <a href="https://github.com/arungyaw/finflow-ai" target="_blank" rel="noreferrer">OPEN REPOSITORY <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">02</span><span class="badge cyan">DATA QUEST</span></div>
+          <div class="project-icon ml">◎</div>
+          <p class="project-type">KAGGLE • BINARY CLASSIFICATION</p>
+          <h3>SMARTPHONE ADDICTION</h3>
+          <p>Built a high-scale prediction pipeline for Kaggle’s Playground Series S6E8, training on 691K+ rows with engineered behavioral features, stratified cross-validation, and boosted-tree ensembles. XGBoost reached 0.9658 OOF ROC-AUC.</p>
+          <ul class="stack"><li>PYTHON</li><li>CATBOOST</li><li>XGBOOST</li><li>FEATURE ENGINEERING</li><li>ROC-AUC</li></ul>
+          <a href="https://www.kaggle.com/competitions/playground-series-s6e8" target="_blank" rel="noreferrer">VIEW COMPETITION <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">03</span><span class="badge cyan">DATA QUEST</span></div>
+          <div class="project-icon taxi">▤</div>
+          <p class="project-type">MACHINE LEARNING • REGRESSION</p>
+          <h3>NYC TAXI FARE</h3>
+          <p>An end-to-end prediction workflow using trip geography and time features, exploratory analysis, model comparison, and clear MAE/RMSE/R² evaluation.</p>
+          <ul class="stack"><li>PYTHON</li><li>PANDAS</li><li>SCIKIT-LEARN</li><li>EDA</li></ul>
+          <a href="https://www.kaggle.com/lucymlai32" target="_blank" rel="noreferrer">VIEW ON KAGGLE <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">04</span><span class="badge purple">SYSTEMS QUEST</span></div>
+          <div class="project-icon chip">▦</div>
+          <p class="project-type">COMPUTER ARCHITECTURE • RESEARCH</p>
+          <h3>WEARABLE PROCESSOR</h3>
+          <p>A low-power RISC-V/ARM processor design evaluated in gem5, exploring DVFS, vector execution, cache tuning, and clock/power-gating tradeoffs.</p>
+          <ul class="stack"><li>GEM5</li><li>RISC-V</li><li>ARM</li><li>RVV</li><li>C++</li></ul>
+          <a href="https://github.com/arungyaw" target="_blank" rel="noreferrer">EXPLORE GITHUB <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">05</span><span class="badge gold">DATABASE QUEST</span></div>
+          <div class="project-icon db">◆</div>
+          <p class="project-type">POSTGRESQL • BASH</p>
+          <h3>WORLD CUP DATABASE</h3>
+          <p>A normalized tournament database with an idempotent Bash import pipeline and SQL reports for winners, goals, rounds, and team performance.</p>
+          <ul class="stack"><li>POSTGRESQL</li><li>SQL</li><li>BASH</li><li>ETL</li></ul>
+          <a href="https://github.com/arungyaw/world-cup-database" target="_blank" rel="noreferrer">OPEN REPOSITORY <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">06</span><span class="badge red">ML QUEST</span></div>
+          <div class="project-icon ml">%</div>
+          <p class="project-type">MACHINE LEARNING • CLASSIFICATION</p>
+          <h3>ADULT INCOME MODEL</h3>
+          <p>A reproducible classification project that cleans demographic data, engineers categorical features, compares models, and examines meaningful metrics.</p>
+          <ul class="stack"><li>PYTHON</li><li>NUMPY</li><li>SCIKIT-LEARN</li><li>CLASSIFICATION</li></ul>
+          <a href="https://www.kaggle.com/lucymlai32" target="_blank" rel="noreferrer">VIEW ON KAGGLE <span>→</span></a>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-top"><span class="project-number">07</span><span class="badge green">JAVA QUEST</span></div>
+          <div class="project-icon bank">$</div>
+          <p class="project-type">JAVA • APPLICATION DESIGN</p>
+          <h3>PMA</h3>
+          <p>A Java application project demonstrating layered design, domain modeling, data access, and maintainable business logic.</p>
+          <ul class="stack"><li>JAVA</li><li>SPRING</li><li>SQL</li><li>MVC</li></ul>
+          <a href="https://github.com/arungyaw/PMA" target="_blank" rel="noreferrer">OPEN REPOSITORY <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section inventory" id="inventory">
+      <div class="section-heading"><p>WORLD 02</p><h2>SKILL INVENTORY</h2><span>A practical stack, not a buzzword collection.</span></div>
+      <div class="inventory-layout">
+        <div class="skill-groups">
+          <article><h3><span>⚔</span> BACKEND</h3><p>Java • Python • Spring Boot • REST APIs • JWT • Hibernate • Node.js</p></article>
+          <article><h3><span>✦</span> DATA + ML</h3><p>Python • Pandas • NumPy • Scikit-learn • CatBoost • XGBoost • EDA</p></article>
+          <article><h3><span>◈</span> DATABASES</h3><p>PostgreSQL • MySQL • SQL • Data Modeling • ETL Pipelines</p></article>
+          <article><h3><span>⌘</span> FRONTEND + TOOLS</h3><p>React • TypeScript • JavaScript • HTML/CSS • Git • Linux • Docker</p></article>
+        </div>
+        <div class="stats-panel">
+          <h3>PLAYER STATS</h3>
+          <div class="stat"><span>JAVA + PYTHON ENGINEERING</span><b>88</b><i style="--level:88%"></i></div>
+          <div class="stat"><span>DATABASES + SQL</span><b>84</b><i style="--level:84%"></i></div>
+          <div class="stat"><span>DATA + MACHINE LEARNING</span><b>78</b><i style="--level:78%"></i></div>
+          <div class="stat"><span>FRONTEND DEVELOPMENT</span><b>76</b><i style="--level:76%"></i></div>
+          <p>PASSIVE ABILITY</p><strong>TRANSLATES BUSINESS PROBLEMS INTO WORKING SOFTWARE</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-heading"><p>WORLD 03</p><h2>ADVENTURE LOG</h2><span>Where the experience points came from.</span></div>
+      <div class="timeline">
+        <article><time>2023—2024</time><div><span class="timeline-chip">PROFESSIONAL</span><h3>FULL-STACK DEVELOPER</h3><h4>Tuppl Technologies</h4><p>Built and supported Java full-stack solutions in the banking domain, working across APIs, business logic, databases, and production troubleshooting.</p></div></article>
+        <article><time>2022—2023</time><div><span class="timeline-chip blue">DATA</span><h3>DATA ANALYST</h3><p>Turned raw operational data into structured analysis, reports, and insights with SQL, Python, and clear visual communication.</p></div></article>
+        <article><time>2022</time><div><span class="timeline-chip purple">RESEARCH</span><h3>RESEARCH ASSISTANT</h3><p>Investigated computing and data problems through experimentation, literature review, reproducible analysis, and technical documentation.</p></div></article>
+        <article><time>MASTER'S</time><div><span class="timeline-chip gold">EDUCATION</span><h3>COMPUTER SCIENCE</h3><h4>University of the Cumberlands</h4><p>Advanced work spanning machine learning, algorithms, networks, databases, and computer architecture.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="terminal-head"><span>ARUN@PORTFOLIO:~</span><span>● ● ●</span></div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> ./start_conversation.sh</p>
+        <h2>READY FOR<br>THE NEXT LEVEL?</h2>
+        <p class="contact-copy">I’m open to Java/Python software engineering, data engineering, and applied ML opportunities where reliable systems and real-world impact matter.</p>
+        <div class="social-links">
+          <a href="https://github.com/arungyaw" target="_blank" rel="noreferrer"><span>01</span>GITHUB ↗</a>
+          <a href="https://www.kaggle.com/lucymlai32" target="_blank" rel="noreferrer"><span>02</span>KAGGLE ↗</a>
+          <a href="https://www.linkedin.com/in/arun-gyawali-b3ba1a250" target="_blank" rel="noreferrer"><span>03</span>LINKEDIN ↗</a>
+        </div>
+        <p class="cursor-line"><span class="prompt">$</span> <span class="blink">█</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 ARUN GYAWALI</span><span>BUILT WITH CURIOSITY + CAFFEINE</span><a href="#home">BACK TO START ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
